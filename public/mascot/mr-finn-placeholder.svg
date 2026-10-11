@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <!-- PLACEHOLDER ASSET FOR MR. FINN (WALKSHARK MASCOT) -->
+  <!-- TO SWAP: Place your official mascot PNG or SVG in /public/mascot/front.png or replace this file -->
+  <defs>
+    <filter id="brutal-shadow" x="0" y="0" width="120%" height="120%">
+      <feDropShadow dx="6" dy="6" stdDeviation="0" flood-color="#000000" />
+    </filter>
+  </defs>
+
+  <!-- Background circular badge -->
+  <circle cx="200" cy="200" r="170" fill="#1F4BFF" stroke="#000000" stroke-width="8" filter="url(#brutal-shadow)" />
+
+  <!-- Dorsal Fin -->
+  <path d="M 195 50 C 190 50, 240 100, 260 130 C 230 130, 205 100, 195 50 Z" fill="#1433B8" stroke="#000000" stroke-width="6" />
+
+  <!-- Belly -->
+  <ellipse cx="200" cy="235" rx="100" ry="85" fill="#F5F7FF" stroke="#000000" stroke-width="6" />
+
+  <!-- Eyes with Electric Yellow -->
+  <circle cx="160" cy="180" r="22" fill="#FFE45C" stroke="#000000" stroke-width="5" />
+  <circle cx="164" cy="180" r="9" fill="#000000" />
+  <circle cx="240" cy="180" r="22" fill="#FFE45C" stroke="#000000" stroke-width="5" />
+  <circle cx="244" cy="180" r="9" fill="#000000" />
+
+  <!-- Friendly Smile & Teeth -->
+  <path d="M 155 230 Q 200 270 245 230" fill="none" stroke="#000000" stroke-width="7" stroke-linecap="round" />
+  <polygon points="185,236 193,248 201,236" fill="#FFFFFF" stroke="#000000" stroke-width="3" />
+  <polygon points="205,236 213,248 221,236" fill="#FFFFFF" stroke="#000000" stroke-width="3" />
+
+  <!-- Walking Sneakers -->
+  <rect x="135" y="310" width="45" height="24" rx="12" fill="#FFE45C" stroke="#000000" stroke-width="5" />
+  <rect x="220" y="310" width="45" height="24" rx="12" fill="#FFE45C" stroke="#000000" stroke-width="5" />
+
+  <!-- Label tag -->
+  <rect x="110" y="340" width="180" height="32" rx="6" fill="#000000" />
+  <text x="200" y="362" fill="#FFE45C" font-family="Arial Black, Impact, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" letter-spacing="2">MR. FINN (SWAPPABLE)</text>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" width="100%" height="100%">
+  <!-- GLOSSY 3D COIN STACK (TEAL, WHITE & NAVY) - SWAPPABLE ASSET -->
+  <defs>
+    <linearGradient id="coinGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#CCE4EC" />
+      <stop offset="50%" stop-color="#12789C" />
+      <stop offset="100%" stop-color="#0A4A62" />
+    </linearGradient>
+    <linearGradient id="coinGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#5FAAC0" />
+      <stop offset="100%" stop-color="#12789C" />
+    </linearGradient>
+    <linearGradient id="shineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#0C2342" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Bottom Coin -->
+  <g filter="url(#softShadow)">
+    <path d="M40 140 C40 125 160 125 160 140 L160 156 C160 170 40 170 40 156 Z" fill="url(#coinGrad1)" />
+    <ellipse cx="100" cy="140" rx="60" ry="18" fill="url(#coinGrad2)" />
+    <ellipse cx="100" cy="140" rx="50" ry="14" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-opacity="0.6" />
+  </g>
+
+  <!-- Middle Coin -->
+  <g filter="url(#softShadow)">
+    <path d="M40 105 C40 90 160 90 160 105 L160 121 C160 135 40 135 40 121 Z" fill="url(#coinGrad1)" />
+    <ellipse cx="100" cy="105" rx="60" ry="18" fill="url(#coinGrad2)" />
+    <ellipse cx="100" cy="105" rx="50" ry="14" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-opacity="0.6" />
+  </g>
+
+  <!-- Top Coin with Rupee Glyph -->
+  <g filter="url(#softShadow)">
+    <path d="M40 70 C40 55 160 55 160 70 L160 86 C160 100 40 100 40 86 Z" fill="url(#coinGrad1)" />
+    <ellipse cx="100" cy="70" rx="60" ry="18" fill="url(#coinGrad2)" />
+    <ellipse cx="100" cy="70" rx="52" ry="15" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-opacity="0.7" />
+    <!-- Glossy Highlight Reflection -->
+    <path d="M55 68 C65 58 135 58 145 68 C135 62 65 62 55 68 Z" fill="url(#shineGrad)" />
+    <!-- Rupee symbol on top coin -->
+    <text x="100" y="77" fill="#0C2342" font-family="sans-serif" font-weight="900" font-size="24" text-anchor="middle" opacity="0.85">₹</text>
+  </g>
+</svg>

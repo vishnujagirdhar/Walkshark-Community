@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Helvetica World';
+  src: url('/fonts/HelveticaWorld.woff2') format('woff2'),
+       url('/fonts/HelveticaWorld.ttf') format('truetype');
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+:root {
+  --color-fog-grey: #EDEDED;
+  --workshop-teal: #12789C;
+  --deep-navy: #0C2342;
+  --font-heading: 'Bricolage Grotesque', sans-serif;
+  --font-body: 'Helvetica World', Helvetica, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-fog-grey);
+  color: var(--deep-navy);
+}
+
+body {
+  background-color: var(--color-fog-grey);
+  color: var(--deep-navy);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+/* Soft rectangle custom utility surfaces */
+.soft-card {
+  background-color: #FFFFFF;
+  border-radius: 28px;
+  box-shadow: 0 10px 30px rgba(12, 35, 66, 0.08);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.soft-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 36px rgba(12, 35, 66, 0.12);
+}
+
+.soft-tile {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(12, 35, 66, 0.06);
+}
+
+/* Clean input style */
+.soft-input {
+  height: 56px;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  border: 1px solid #EDEDED;
+  padding: 0 1.25rem;
+  font-size: 0.9375rem;
+  color: #0C2342;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.soft-input:focus {
+  outline: none;
+  border-color: #12789C;
+  box-shadow: 0 0 0 3px rgba(18, 120, 156, 0.2);
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

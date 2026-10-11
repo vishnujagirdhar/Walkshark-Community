@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" width="100%" height="100%">
+  <!-- GLOSSY 3D CHECK BADGE (TEAL ON LIGHT CARD) - SWAPPABLE ASSET -->
+  <defs>
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5FAAC0" />
+      <stop offset="50%" stop-color="#12789C" />
+      <stop offset="100%" stop-color="#0E6180" />
+    </linearGradient>
+    <linearGradient id="badgeRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#CCE4EC" />
+    </linearGradient>
+    <filter id="badgeShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#0C2342" flood-opacity="0.2" />
+    </filter>
+  </defs>
+
+  <g filter="url(#badgeShadow)">
+    <!-- Outer Shield / Rounded Polygon -->
+    <rect x="35" y="35" width="130" height="130" rx="36" fill="url(#badgeRing)" />
+    <!-- Inner Teal Circle -->
+    <circle cx="100" cy="100" r="54" fill="url(#badgeGrad)" />
+
+    <!-- Glossy Highlight Arch -->
+    <path d="M52 80 C56 56 76 52 100 52 C124 52 144 56 148 80 C138 66 118 60 100 60 C82 60 62 66 52 80 Z" fill="#FFFFFF" opacity="0.4" />
+
+    <!-- 3D White Checkmark -->
+    <path d="M80 102 L93 116 L122 84" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>
